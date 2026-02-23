@@ -1,1 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sakagami Spitzner Advocacia | Direito em Curitiba </title>
+    <meta name="description" content="Escritório de advocacia em Curitiba/PR – Serviços jurídicos personalizados. Atuação em diversas áreas do direito. CNPJ 40.184.043/0001-99. Dra. Marcia Sakagami Spitzner.">
+    <meta name="keywords" content="advocacia, advogada Curitiba, direito civil, direito trabalhista, sociedade de advogados, Água Verde, escritório de advocacia">
+    <meta name="author" content="Sakagami Spitzner Sociedade Individual de Advocacia">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:title" content="Sakagami Spitzner Advocacia">
+    <meta property="og:description" content="Atendimento jurídico personalizado em Curitiba/PR. Conheça nossos serviços e agende uma consulta.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sakagamispitzner.adv.br">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200">
+    <!-- Favicon (gerado via emoji, apenas para demonstração) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+    <!-- Google Fonts + Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #1e1e2f;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        /* header */
+        .top-bar {
+            background-color: #0b2545;
+            color: #eef4ff;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        .top-bar .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar a {
+            color: #eef4ff;
+            text-decoration: none;
+            margin-right: 1.5rem;
+        }
+        .top-bar a i {
+            margin-right: 0.3rem;
+            color: #b6c9ff;
+        }
+        .social-icons a {
+            margin-left: 1rem;
+            margin-right: 0;
+            font-size: 1rem;
+        }
+        .main-header {
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #0b2545;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            color: #4a5b7a;
+            letter-spacing: 0.5px;
+        }
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #1e2b45;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        .nav-links a:hover {
+            color: #2f4b8a;
+            border-bottom: 2px solid #2f4b8a;
+        }
+        .btn-contato-header {
+            background: #0b2545;
+            color: white !important;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            margin-left: 2rem;
+            font-weight: 600;
+        }
+        .btn-contato-header:hover {
+            background: #1e3a6b;
+            border-bottom: none !important;
+        }
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #f0f4fc 0%, #ffffff 70%);
+            padding: 3rem 0 4rem 0;
+        }
+        .hero .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        .hero-text {
+            flex: 1 1 400px;
+        }
+        .hero-text h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #0b2545;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #2f405c;
+            margin-bottom: 2rem;
+            max-width: 550px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: #0b2545;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .btn-hero {
+            background: #0b2545;
+            color: white;
+            border: none;
+            padding: 0.9rem 2.2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-hero i {
+            margin-left: 0.5rem;
+        }
+        .btn-hero:hover {
+            background: #1f3b68;
+            transform: scale(1.02);
+        }
+        .hero-image {
+            flex: 1 1 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 30px -10px rgba(0,20,40,0.2);
+        }
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* seções */
+        section {
+            padding: 4rem 0;
+        }
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #0b2545;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .section-sub {
+            text-align: center;
+            color: #4a5f7c;
+            max-width: 750px;
+            margin: 0 auto 3rem auto;
+        }
+        /* serviços */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-card {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            transition: 0.2s;
+            border: 1px solid #e9eef5;
+            text-align: center;
+        }
+        .service-card i {
+            font-size: 2.5rem;
+            color: #0b2545;
+            margin-bottom: 1rem;
+        }
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: #0b2545;
+        }
+        .service-card p {
+            color: #3a4c68;
+        }
+        /* quem somos */
+        .about {
+            background: #f6f9ff;
+        }
+        .about .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+        }
+        .about-text {
+            flex: 2 1 400px;
+        }
+        .about-text h3 {
+            font-size: 2rem;
+            color: #0b2545;
+            margin-bottom: 1.5rem;
+        }
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #2d3f5c;
+        }
+        .about-highlight {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 20px;
+            border-left: 6px solid #0b2545;
+            margin-top: 2rem;
+        }
+        .about-highlight p {
+            margin-bottom: 0.3rem;
+        }
+        .about-image {
+            flex: 1 1 300px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        /* dados da empresa (CNPJ etc) */
+        .company-data {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid #dbe1ec;
+            margin: 2rem 0;
+        }
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .data-item {
+            font-size: 0.95rem;
+        }
+        .data-item strong {
+            color: #0b2545;
+        }
+        /* escritório / fotos */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+            height: 220px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        /* contato e localização */
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .contact-info {
+            flex: 1 1 300px;
+            background: #f6f9ff;
+            padding: 2rem;
+            border-radius: 20px;
+        }
+        .contact-info h4 {
+            font-size: 1.6rem;
+            color: #0b2545;
+            margin-bottom: 1.5rem;
+        }
+        .contact-detail {
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .contact-detail i {
+            font-size: 1.3rem;
+            color: #0b2545;
+            min-width: 30px;
+        }
+        .map-container {
+            flex: 2 1 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 320px;
+            border: 0;
+        }
+        /* política de privacidade e rodapé */
+        .footer {
+            background: #0b2545;
+            color: #cdddfd;
+            padding: 3rem 0 1.5rem;
+        }
+        .footer a {
+            color: #cdddfd;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        .footer-col p, .footer-col i {
+            margin-bottom: 0.8rem;
+        }
+        .footer-col .logo-footer {
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        .footer-bottom {
+            border-top: 1px solid #28436b;
+            padding-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .privacy-link {
+            margin-left: 1.5rem;
+        }
+        /* botão flutuante whatsapp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 99;
+            transition: 0.2s;
+        }
+        .whatsapp-float:hover {
+            background: #20b859;
+            transform: scale(1.1);
+        }
+        /* responsivo */
+        @media (max-width: 800px) {
+            .main-header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links a {
+                margin: 0 1rem;
+            }
+            .btn-contato-header {
+                margin-left: 0;
+            }
+            .hero-text h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- barra superior com contatos -->
+    <div class="top-bar">
+        <div class="container">
+            <div>
+                <a href="tel:+5541999999999"><i class="fas fa-phone-alt"></i> (41) 99999-9999</a>
+                <a href="mailto:contato@sakagamispitzner.adv.br"><i class="fas fa-envelope"></i> contato@sakagamispitzner.adv.br</a>
+                <span><i class="fas fa-map-marker-alt"></i> Curitiba/PR</span>
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
 
+    <!-- cabeçalho principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Sakagami Spitzner</h1>
+                <p>Sociedade Individual de Advocacia</p>
+            </div>
+            <nav class="nav-links">
+                <a href="#servicos">Serviços</a>
+                <a href="#quem-somos">Quem somos</a>
+                <a href="#escritorio">Escritório</a>
+                <a href="#contato">Contato</a>
+                <a href="#privacidade" id="privacy-link">Privacidade</a>
+                <a href="#contato" class="btn-contato-header"><i class="fas fa-gavel"></i> Consulta</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO com imagem (foto de justiça) -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <span class="hero-badge">⚖️ Desde 2020 em Curitiba</span>
+                <h2>Estratégia jurídica <br>com visão humana</h2>
+                <p>Atendimento personalizado e compromisso com seus direitos. Conheça um escritório construído para proteger pessoas e empresas.</p>
+                <a href="#contato" class="btn-hero">Falar com a Dra. Marcia <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&auto=format" alt="Tribunal e justiça" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+        <div class="container">
+            <h2 class="section-title">Áreas de atuação</h2>
+            <p class="section-sub">Oferecemos suporte jurídico em diferentes frentes, sempre com ética e dedicação.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-scale-balanced"></i>
+                    <h3>Direito Civil</h3>
+                    <p>Contratos, responsabilidade civil, direito das famílias, sucessões e obrigações.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Direito Trabalhista</h3>
+                    <p>Reclamações trabalhistas, acordos, assessoria a empregados e empregadores.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Direito Empresarial</h3>
+                    <p>Constituição de empresas, contratos societários, recuperação de crédito.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Consultoria Preventiva</h3>
+                    <p>Análise de riscos, pareceres e planejamento jurídico personalizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS com dados da empresa -->
+    <section id="quem-somos" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h3>Dra. Marcia Sakagami Spitzner</h3>
+                <p>Advogada inscrita na OAB/PR, titular da sociedade individual de advocacia Sakagami Spitzner. Desde 2020 atuando com dedicação plena em Curitiba e região, oferecendo um serviço jurídico transparente e próximo do cliente. Nossa missão é transformar a complexidade jurídica em soluções claras.</p>
+                <p><strong>Compromisso com a ética e atualização constante</strong> – Por isso investimos em conhecimento e tecnologia para melhor atender.</p>
+                <!-- dados da empresa em destaque -->
+                <div class="about-highlight">
+                    <p><i class="fas fa-check-circle" style="color:#0b2545;"></i> <strong>CNPJ:</strong> 40.184.043/0001-99</p>
+                    <p><i class="fas fa-check-circle" style="color:#0b2545;"></i> <strong>Razão Social:</strong> Sakagami Spitzner Sociedade Individual de Advocacia</p>
+                    <p><i class="fas fa-check-circle" style="color:#0b2545;"></i> <strong>Data abertura:</strong> 22/12/2020 (5 anos, 2 meses) · <strong>Capital:</strong> R$ 3.000,00</p>
+                    <p><i class="fas fa-check-circle" style="color:#0b2545;"></i> <strong>Situação:</strong> Ativa · <strong>Simples Nacional</strong> · <strong>CNAE:</strong> 69.11-7-01 (Serviços advocatícios)</p>
+                    <p><i class="fas fa-check-circle" style="color:#0b2545;"></i> <strong>Titular:</strong> Marcia Simone Sakagami Spitzner (Pessoa Física)</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format" alt="Advogada em escritório" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTOS DO ESCRITÓRIO (galeria) -->
+    <section id="escritorio">
+        <div class="container">
+            <h2 class="section-title">Espaço profissional</h2>
+            <p class="section-sub">Ambiente acolhedor e funcional para receber nossos clientes no bairro Água Verde.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=400&auto=format" alt="Escritório advocacia mesa" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1453945619912-79d289db6922?w=400&auto=format" alt="Sala de reuniões" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&auto=format" alt="Biblioteca jurídica" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1528747008803-f9f5cc8f1a64?w=400&auto=format" alt="Detalhe escritório" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO + MAPA + ENDEREÇO -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title">Contato & Localização</h2>
+            <div class="contact-row">
+                <div class="contact-info">
+                    <h4>Atendimento</h4>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div><strong>Telefone/WhatsApp</strong><br>(41) 99999-9999 (ver e-mail para contato seguro)</div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div><strong>E-mail</strong><br>contato@sakagamispitzner.adv.br</div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-pin"></i>
+                        <div><strong>Endereço para correspondência</strong><br>Rua Silveira Peixoto, 380 - Apt 203, Andar 2<br>Cond Ed Palmerston - Água Verde<br>Curitiba/PR - CEP 80240-120</div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div><strong>Horário</strong><br>Segunda a sexta, 9h às 18h</div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <!-- Mapa incorporado do Google Maps (ponto aproximado) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.1529983190573!2d-49.27767602494527!3d-25.441910277562063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4702bafc7f1%3A0xf3df8e7a6d7c6e6f!2sR.%20Silveira%20Peixoto%2C%20380%20-%20%C3%81gua%20Verde%2C%20Curitiba%20-%20PR%2C%2080240-120!5e0!3m2!1spt-BR!2sbr!4v1710456789123" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POLÍTICA DE PRIVACIDADE (seção oculta que pode ser aberta via link) -->
+    <section id="privacidade" style="background: #f2f5fa; scroll-margin-top: 80px;">
+        <div class="container" style="max-width: 900px;">
+            <h2 class="section-title">Política de Privacidade</h2>
+            <p style="margin-bottom:1rem;">A Sakagami Spitzner Sociedade Individual de Advocacia valoriza a proteção de dados pessoais. Esta política está em conformidade com a LGPD (Lei Geral de Proteção de Dados).</p>
+            <p><strong>Coleta de informações:</strong> Nome, e-mail, telefone e dados estritamente necessários para contato e prestação de serviços advocatícios. Os dados são mantidos em sigilo profissional.</p>
+            <p><strong>Compartilhamento:</strong> Não compartilhamos informações com terceiros sem seu consentimento, exceto por obrigação legal ou ordem judicial.</p>
+            <p><strong>Armazenamento:</strong> Seus dados são armazenados de forma segura e pelo tempo exigido por lei (Código de Ética e OAB).</p>
+            <p><strong>Direitos do titular:</strong> Você pode solicitar acesso, correção ou exclusão de dados pelo e-mail: contato@sakagamispitzner.adv.br</p>
+            <p><em>Esta política pode ser atualizada. Consulte sempre esta página.</em></p>
+            <p style="margin-top:1.5rem;">🔒 <strong>CNPJ:</strong> 40.184.043/0001-99 / <strong>Responsável:</strong> Marcia Simone Sakagami Spitzner</p>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-footer">Sakagami Spitzner</div>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Silveira Peixoto, 380 - Sala 203<br>Água Verde, Curitiba/PR - CEP 80240-120</p>
+                    <p><i class="fas fa-phone"></i> (41) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@sakagamispitzner.adv.br</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Informações</h4>
+                    <p><a href="#quem-somos">Quem somos</a></p>
+                    <p><a href="#servicos">Serviços</a></p>
+                    <p><a href="#privacidade">Política de Privacidade</a></p>
+                    <p><a href="#contato">Contato</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Horário</h4>
+                    <p>Segunda a sexta<br>9h – 12h / 13h30 – 18h</p>
+                    <p>ou mediante agendamento</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 Sakagami Spitzner Sociedade Individual de Advocacia. Todos os direitos reservados. | <a href="#privacidade" style="text-decoration:underline;">Política de Privacidade</a></div>
+                <div>CNPJ: 40.184.043/0001-99 | OAB/PR sob responsabilidade da titular</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5541999999999" class="whatsapp-float" target="_blank" title="Fale conosco pelo WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- pequeno script para rolagem suave e destaque da política -->
+    <script>
+        (function() {
+            // rolagem suave para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === "#" || href === "") return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // opcional: mostrar alerta de dados de contato protegidos (e-mail e telefone ocultos)
+            const contactLink = document.querySelector('a[href="mailto:contato@sakagamispitzner.adv.br"]');
+            if(contactLink) {
+                contactLink.addEventListener('click', (e) => {
+                    // apenas demonstração, o e-mail é real no código
+                });
+            }
+        })();
+    </script>
+
+    <!-- Estrutura de dados (Schema.org) para escritório de advocacia -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Sakagami Spitzner Sociedade Individual de Advocacia",
+      "alternateName": "Sakagami Spitzner Advocacia",
+      "url": "https://www.sakagamispitzner.adv.br",
+      "logo": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600",
+      "description": "Serviços advocatícios em Curitiba/PR, atuação nas áreas cível, trabalhista e empresarial.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Silveira Peixoto, 380, Apt 203",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "postalCode": "80240-120",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-25.441912",
+        "longitude": "-49.275487"
+      },
+      "telephone": "+5541999999999",
+      "email": "contato@sakagamispitzner.adv.br",
+      "founder": {
+        "@type": "Person",
+        "name": "Marcia Simone Sakagami Spitzner"
+      },
+      "foundingDate": "2020-12-22",
+      "vatID": "40184043000199",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "City",
+        "name": "Curitiba"
+      }
+    }
+    </script>
+</body>
+</html>
